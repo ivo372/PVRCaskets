@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Product</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Add New Product</h2>
+    <!-- 
+      NOTE FOR DEVELOPERS:
+      This form is static. In the future, it should create a new product in the database.
+      The link between this page and admin-products.html button "Add New Button" hasn't been implemented yet.
+      It is advise to only add new products to the products.html, and use the edit mode for the files in index.html
+    -->
+    <form>
+      <div class="mb-3">
+        <label for="productImage" class="form-label">Product Image</label>
+        <input type="file" class="form-control" id="productImage" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="productName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="productName" placeholder="Enter product name" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="productDescription" class="form-label">Description / Features</label>
+        <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product features, one per line" disabled></textarea><!-- PRODUCT FEATURES LIST: This should be dynamically generated from a list/array in the database -->
+      </div>
+      <div class="mb-3">
+        <label for="originalPrice" class="form-label">Original Price</label>
+        <input type="text" class="form-control" id="originalPrice" placeholder="e.g. 1,199.99€" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="discountPrice" class="form-label">Discount Price</label>
+        <input type="text" class="form-control" id="discountPrice" placeholder="e.g. 999.99€" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="displayOn" class="form-label">Display On</label>
+        <select class="form-select" id="displayOn" disabled>
+          <option>Homepage</option>
+          <option>Products</option>
+          <option>Both</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success" disabled>Add Product</button>
+      <a href="admin-products.html" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>

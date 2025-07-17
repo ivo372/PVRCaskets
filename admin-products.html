@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Manage Products</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add any other CSS you need -->
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Admin - Product Management</h2>
+    
+    <!-- ADD PRODUCT BUTTON (future: open add product form/modal) -->
+    <button class="btn btn-primary mb-3" disabled>
+      Add New Product
+    </button>
+    <!-- In the future, this button will open a form/modal to add a new product -->
+    
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-outline-secondary" disabled>Logout</button>
+    </div>
+
+    <!-- PRODUCT TABLE START -->
+    <!-- In the future, this table will be dynamically generated from the database -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Original Price</th>
+          <th>discount-price</th>
+          <th>Display On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- PRODUCT ROW TEMPLATE: Repeat this row for each product -->
+        <tr>
+          <td>
+            <img src="myimages/metalCaskets/casket02.jpg" alt="Casket" style="width: 80px;">
+          </td>
+          <td>Premium Oak</td>
+          <td>Metal</td>
+          <td>20-Gauge Steel, White Crepe Interior</td>
+          <td>1,199.99€</td>
+          <td>999.99€</td>
+          <td>Homepage/ Products /Both</td> <!-- Example value -->
+          <td>
+            <!-- In the future, these buttons will trigger edit/delete actions -->
+            <button class="btn btn-sm btn-warning" disabled>Edit</button>
+            <button class="btn btn-sm btn-danger" disabled>Delete</button>
+          </td>
+        </tr>
+        <!-- END PRODUCT ROW TEMPLATE -->
+      </tbody>
+    </table>
+    <!-- PRODUCT TABLE END -->
+
+    <!-- NOTE FOR DEVELOPERS -->
+    <!-- 
+      This page is static. 
+      All product rows and actions should be dynamically generated and handled by backend logic in the future.
+      Add/Edit/Delete buttons are currently disabled and serve as placeholders.
+    -->
+  </div>
+</body>
+</html>

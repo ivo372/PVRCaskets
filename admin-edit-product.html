@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Edit Product</h2>
+    <!-- 
+      NOTE FOR DEVELOPERS:
+      This form is static. In the future, it should be pre-filled with product data from the database.
+      On submit, it should update the product in the database. 
+      The link between this page and admin-products.html button "edit" hasn't been implemented yet.
+    -->
+    <form>
+      <div class="mb-3">
+        <label for="productImage" class="form-label">Product Image</label>
+        <!-- In the future, show current image and allow upload -->
+        <input type="file" class="form-control" id="productImage" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="productName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="productName" value="Premium Oak" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="productDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="productDescription" rows="3" disabled>20-Gauge Steel, White Exterior White, Crepe Interior</textarea> <!-- PRODUCT FEATURES LIST: This should be dynamically generated from a list/array in the database -->
+      </div>
+      <div class="mb-3">
+        <label for="originalPrice" class="form-label">Original Price</label>
+        <input type="text" class="form-control" id="originalPrice" value="1,199.99€" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="discountPrice" class="form-label">Discount Price</label>
+        <input type="text" class="form-control" id="discountPrice" value="999.99€" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="displayOn" class="form-label">Display On</label>
+        <select class="form-select" id="displayOn" disabled>
+          <option selected>Homepage</option>
+          <option>Products</option>
+          <option>Both</option>
+        </select>
+      </div>
+      <!-- In the future, enable the fields and handle form submission -->
+      <button type="submit" class="btn btn-primary" disabled>Save Changes</button>
+      <a href="admin-products.html" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>
