@@ -1141,6 +1141,138 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+/* Reduce vertical padding in the whole info_section */
+.info_section {
+  padding-top: 25px !important;   /* less than before */
+  padding-bottom: 25px !important;
+}
+
+/* Make logo container margin smaller */
+.info_section .info_logo {
+  margin-bottom: 25px;
+  padding-bottom: 8px;  /* smaller border padding */
+}
+
+/* Smaller margin below h5 */
+.info_section h5 {
+  margin-bottom: 15px;  /* was 25px */
+}
+
+/* Tighten margin between contact info rows */
+.info_section .info_contact > div {
+  margin: 10px 0;   /* was 20px */
+}
+
+/* Make the space between icon and text smaller */
+.info_section .info_contact > div img {
+  margin-right: 8px;  /* was 12px */
+}
+
+/* Slightly reduce padding in insta-box */
+.info_section .info_insta .insta_container .insta-box {
+  padding: 10px; /* was 15px */
+  margin: 3px;   /* was 5px */
+}
+
+/* Reduce margin on social box */
+.info_section .info_form .social_box {
+  margin-top: 20px; /* was 35px */
+}
+
+/* Reduce space between social icons */
+.info_section .info_form .social_box a {
+  margin-right: 15px; /* was 25px */
+}
+
+/* Reduce padding inside newsletter input and button */
+.info_section .info_form form input {
+  padding: 5px 10px; /* was 7px 10px */
+}
+
+.info_section .info_form form button {
+  padding: 6px 25px; /* was 8px 30px */
+  margin-top: 10px;  /* was 15px */
+}
+
+/* Footer smaller vertical padding */
+.footer_section p {
+  padding: 15px 0;  /* was 25px */
+  font-size: 14px;
+}
+
+.info_section .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.info_section .info_contact,
+.info_section .info_links {
+  margin-top: 20px;
+}
+
+.info_section .info_links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.info_section .info_links ul li {
+  margin: 8px 0;
+}
+
+.info_section .info_links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.info_section .info_links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Center each block under the logo */
+.info_section .row {
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.info_section .info_contact,
+.info_section .info_links {
+  max-width: 300px;
+}
+
+.info_section .info_contact p {
+  margin: 0;
+}
+
+.info_section .info_contact > div {
+  margin: 12px 0;
+}
+
+.info_section .info_links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info_section .info_links ul li {
+  margin: 8px 0;
+  text-align: left;
+}
+
+.info_section .info_links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.info_section .info_links ul li a:hover {
+  text-decoration: underline;
+}
+
+
 /*# sourceMappingURL=style.css.map */
 
 /* Pre-Planning CSs */
