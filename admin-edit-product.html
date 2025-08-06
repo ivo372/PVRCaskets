@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container mt-5">
-    <h2 class="mb-4">Edit Product</h2>
+    <h2 class="mb-4">Edição de Produtos</h2>
     <!-- 
       NOTE FOR DEVELOPERS:
       This form is static. In the future, it should be pre-filled with product data from the database.
@@ -17,28 +17,28 @@
     -->
     <form>
       <div class="mb-3">
-        <label for="productImage" class="form-label">Product Image</label>
+        <label for="productImage" class="form-label">Imagem do Produto</label>
         <!-- In the future, show current image and allow upload -->
         <input type="file" class="form-control" id="productImage" disabled>
       </div>
       <div class="mb-3">
-        <label for="productName" class="form-label">Name</label>
+        <label for="productName" class="form-label">Nome</label>
         <input type="text" class="form-control" id="productName" value="Premium Oak" disabled>
       </div>
       <div class="mb-3">
-        <label for="productDescription" class="form-label">Description</label>
+        <label for="productDescription" class="form-label">Descrição</label>
         <textarea class="form-control" id="productDescription" rows="3" disabled>20-Gauge Steel, White Exterior White, Crepe Interior</textarea> <!-- PRODUCT FEATURES LIST: This should be dynamically generated from a list/array in the database -->
       </div>
       <div class="mb-3">
-        <label for="originalPrice" class="form-label">Original Price</label>
+        <label for="originalPrice" class="form-label">Preço Original</label>
         <input type="text" class="form-control" id="originalPrice" value="1,199.99€" disabled>
       </div>
       <div class="mb-3">
-        <label for="discountPrice" class="form-label">Discount Price</label>
+        <label for="discountPrice" class="form-label">Preço com Desconto</label>
         <input type="text" class="form-control" id="discountPrice" value="999.99€" disabled>
       </div>
       <div class="mb-3">
-        <label for="displayOn" class="form-label">Display On</label>
+        <label for="displayOn" class="form-label">Página em que encontra</label>
         <select class="form-select" id="displayOn" disabled>
           <option selected>Homepage</option>
           <option>Products</option>
@@ -46,8 +46,8 @@
         </select>
       </div>
       <!-- In the future, enable the fields and handle form submission -->
-      <button type="submit" class="btn btn-primary" disabled>Save Changes</button>
-      <a href="admin-products.html" class="btn btn-secondary">Cancel</a>
+      <button type="submit" class="btn btn-primary" disabled>Guardar</button>
+      <a href="admin-products.html" class="btn btn-secondary">Cancelar</a>
     </form>
   </div>
 </body>

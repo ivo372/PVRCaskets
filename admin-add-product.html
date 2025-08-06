@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PVRCaskets Add New Product</title>
+  <title>PVRCaskets Adicionar Novo Produto</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container mt-5">
-    <h2 class="mb-4">Add New Product</h2>
+    <h2 class="mb-4">Adicionar Novo Produto</h2>
     <!-- 
       NOTE FOR DEVELOPERS:
       This form is static. In the future, it should create a new product in the database.
@@ -17,35 +17,35 @@
     -->
     <form>
       <div class="mb-3">
-        <label for="productImage" class="form-label">Product Image</label>
+        <label for="productImage" class="form-label">Imagem do Produto</label>
         <input type="file" class="form-control" id="productImage" disabled>
       </div>
       <div class="mb-3">
-        <label for="productName" class="form-label">Name</label>
+        <label for="productName" class="form-label">Nome</label>
         <input type="text" class="form-control" id="productName" placeholder="Enter product name" disabled>
       </div>
       <div class="mb-3">
-        <label for="productDescription" class="form-label">Description / Features</label>
+        <label for="productDescription" class="form-label">Descrição</label>
         <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product features, one per line" disabled></textarea><!-- PRODUCT FEATURES LIST: This should be dynamically generated from a list/array in the database -->
       </div>
       <div class="mb-3">
-        <label for="originalPrice" class="form-label">Original Price</label>
+        <label for="originalPrice" class="form-label">Preço Original</label>
         <input type="text" class="form-control" id="originalPrice" placeholder="e.g. 1,199.99€" disabled>
       </div>
       <div class="mb-3">
-        <label for="discountPrice" class="form-label">Discount Price</label>
+        <label for="discountPrice" class="form-label">Preço com Desconto</label>
         <input type="text" class="form-control" id="discountPrice" placeholder="e.g. 999.99€" disabled>
       </div>
       <div class="mb-3">
-        <label for="displayOn" class="form-label">Display On</label>
+        <label for="displayOn" class="form-label">Página em que se encontra</label>
         <select class="form-select" id="displayOn" disabled>
           <option>Homepage</option>
           <option>Products</option>
           <option>Both</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-success" disabled>Add Product</button>
-      <a href="admin-products.html" class="btn btn-secondary">Cancel</a>
+      <button type="submit" class="btn btn-success" disabled>Adicionar Produto</button>
+      <a href="admin-products.html" class="btn btn-secondary">Cancelar</a>
     </form>
   </div>
 </body>
